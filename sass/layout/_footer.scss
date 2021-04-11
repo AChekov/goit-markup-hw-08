@@ -1,0 +1,123 @@
+.footer {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: var(--second-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+  
+.footer__logo {
+  color: var(--footer-logo);
+}
+  
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+  
+.footer__address {
+  display: block;
+  margin-right: 70px;
+}
+
+.address {
+  margin-top: 20px;
+}
+  
+.address__link:not(:first-child) {
+  margin-top: 8px;
+}
+.map__link {
+  font-size: 14px;
+  line-height: 1.714em;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+.mail__link-footer,
+.tel__link-footer {
+  font-size: 14px;
+  line-height: 1.714em;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .map__link:focus,
+  .map__link:hover,
+  .mail__link-footer:focus,
+  .mail__link-footer:hover,
+  .tel__link-footer:focus,
+  .tel__link-footer:hover {
+    color: var(--second-color);
+  }
+  
+.footer-social {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+  
+.footer-social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+  
+.footer-social__list {
+  margin-top: 20px;
+}
+  
+.footer-social__link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+  
+.footer-social__icon {
+  fill: rgba(255, 255, 255, 1);
+}
+  
+.subscription {
+  margin-left: 93px;
+}
+  
+.subscription__form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+  
+.subscription__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--second-background);
+  color: var(--main-color);
+  padding-left: 16px;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);;
+  }
+}
+  
+.subscription__btn {
+  display: flex;
+  align-items: center;
+  margin-left: 12px; 
+}
+  
+.btn__icon {
+  margin-left: 10px;
+  fill: var(--main-color);
+}
+  
