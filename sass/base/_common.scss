@@ -1,9 +1,15 @@
+.section {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
+
 .body {
   font-family: var(--main-font);
   font-weight: 400;
   background: var(--main-color);
 }
-  
+
+
 h1,
 h2,
 h3,

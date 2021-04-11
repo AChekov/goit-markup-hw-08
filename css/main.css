@@ -15,11 +15,6 @@
   --section-pt: 94px;
 }
 
-.section {
-  padding-top: var(--section-pt);
-  padding-bottom: var(--section-pb);
-}
-
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -30,6 +25,11 @@
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.section {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
 }
 
 .body {
@@ -443,7 +443,7 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
