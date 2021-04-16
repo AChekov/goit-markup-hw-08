@@ -1,10 +1,22 @@
 .portfolio__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+    justify-content: center;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
   
 .portfolio__item {
+  margin-top: 15px;
   &:not(:last-child) {
     margin-right: 8px;
   }
@@ -38,13 +50,23 @@
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
 }
   
 .portfolio-cards__item {
-  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
   background-color: var(--main-color);
+
+  @media (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
   
 .portfolio-cards__link {
