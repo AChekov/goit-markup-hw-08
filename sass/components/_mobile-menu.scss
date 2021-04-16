@@ -121,11 +121,11 @@
         padding-right: 10px;
         }
         &:not(:first-child) {
-            padding-right: 10px;
+            padding-left: 10px;
         }
     }
     
-    .social__link {
+    .mobile-menu__social-link {
         display: flex;
         flex-wrap: wrap;
         font-weight: 500;

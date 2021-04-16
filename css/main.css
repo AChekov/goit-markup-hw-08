@@ -487,7 +487,7 @@ img {
   .mobile-menu__network:not(:first-child) {
     padding-right: 10px;
   }
-  .social__link {
+  .mobile-menu__social-link {
     display: flex;
     flex-wrap: wrap;
     font-weight: 500;
