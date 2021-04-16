@@ -28,7 +28,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--main-animation);
   
   &:focus {
     outline: none;
@@ -48,7 +48,7 @@
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--main-animation);
 
   .modal-form__input:focus + & {
     fill: var(--second-color);
@@ -62,7 +62,7 @@
   border-radius: 4px;
   padding: 12px 16px;
   resize: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--main-animation);
   margin-top: 4px;
   margin-bottom: 20px;
 
@@ -132,7 +132,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--main-animation);
   
   &:focus,
   &:hover {

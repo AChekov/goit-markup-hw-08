@@ -19,7 +19,7 @@
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--main-animation);
 
   &:hover,
   &:focus {
@@ -35,7 +35,7 @@
   display: flex;
   background-position: center;
   fill: var(--icon-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: fill var(--main-animation); 
 }
 
 .clients__item {
