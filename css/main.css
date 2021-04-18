@@ -1234,7 +1234,7 @@ img {
 
 .subscription {
   display: flex;
-  margin-left: auto;
+  /*   margin-left: auto; */
   flex-direction: column;
 }
 
