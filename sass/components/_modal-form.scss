@@ -3,6 +3,7 @@
   font-size: 20px;
   line-height: 1.15em;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--text-color);
   margin-bottom: 12px;
 }
@@ -86,8 +87,15 @@
   
   color: var(--second-text-color);
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.4;
+  }
 
   &::before {
     display: block;

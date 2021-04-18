@@ -9,16 +9,40 @@
   
 .footer__logo {
   color: var(--footer-logo);
+  @media (min-width: 768px) {
+    margin-right: 0;
+  }
 }
   
 .footer__container {
-  display: flex;
   align-items: baseline;
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
   
+.footer-wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  
+  @media (max-width: 1199px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
 .footer__address {
-  display: block;
-  margin-right: 70px;
+  display: inline-block;
+  @media (min-width: 768px) {
+    margin-right: 70px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .address {
@@ -55,6 +79,13 @@
   .tel__link-footer:hover {
     color: var(--second-color);
   }
+
+.footer-icon {
+  min-width: 206px;
+  @media (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
   
 .footer-social {
   font-family: var(--main-font);
@@ -64,6 +95,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
+  @media (max-width: 1199px) {
+    display: block;
+    text-align: center;
+  }
 }
   
 .footer-social__item {
@@ -73,6 +108,7 @@
 }
   
 .footer-social__list {
+  justify-content: center;
   margin-top: 20px;
 }
   
@@ -85,13 +121,22 @@
 }
   
 .subscription {
-  margin-left: 93px;
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+  @media (max-width: 769px) {
+  display: block;
+  }
 }
   
 .subscription__form {
   display: flex;
-  align-items: center;
   margin-top: 20px;
+  @media (max-width: 1199px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
   
 .subscription__input {
@@ -108,12 +153,24 @@
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);;
   }
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-right: 0px;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
 }
   
 .subscription__btn {
   display: flex;
   align-items: center;
   margin-left: 12px; 
+  @media (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
 }
   
 .btn__icon {
