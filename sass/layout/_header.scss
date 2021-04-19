@@ -106,10 +106,9 @@
     fill: var(--second-text-color);
     transition: fill var(--main-animation);
   }
-
 }
-@media screen and (min-width: 1200px) {
 
+@media screen and (min-width: 1200px) {
   .list-link {
     display: flex;
     flex-direction: row;

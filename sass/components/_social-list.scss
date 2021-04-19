@@ -1,8 +1,18 @@
 .social__list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  /* margin-top: 16px; */
+
+  @media (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .social__icon {
   fill: var(--icon-color);
   transition: fill var(--main-animation);

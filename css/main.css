@@ -65,6 +65,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -200,7 +202,18 @@ img {
 .social__list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  /* margin-top: 16px; */
+}
+
+@media (min-width: 1200px) {
+  .social__list {
+    justify-content: space-between;
+  }
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social__icon {
@@ -724,6 +737,12 @@ img {
   padding-bottom: 0;
 }
 
+@media (max-width: 1199px) {
+  .advantages {
+    padding-bottom: 60px;
+  }
+}
+
 .advantages__title {
   font-weight: 700;
   font-size: 14px;
@@ -756,7 +775,18 @@ img {
 .advantages__item {
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc(100% / 4 - 30px);
+}
+
+@media (min-width: 768px) {
+  .advantages__item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .advantages__container {
@@ -959,7 +989,7 @@ img {
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 @media (min-width: 768px) {
@@ -1018,6 +1048,7 @@ img {
 }
 
 .portfolio-cards__item {
+  display: flex;
   margin-left: 30px;
   margin-top: 30px;
   background-color: var(--main-color);
@@ -1036,7 +1067,8 @@ img {
 }
 
 .portfolio-cards__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow var(--main-animation);
 }
 
@@ -1045,6 +1077,7 @@ img {
 }
 
 .portfolio-cards__content {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
