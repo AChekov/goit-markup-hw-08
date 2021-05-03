@@ -52,7 +52,6 @@
         top: 0;
         left: 50%;
         width: 100vw;
-        max-width: 480px;
         height: 100vh;
         padding: 48px 40px;
         background-color: var(--main-color);
@@ -81,11 +80,17 @@
         &--current {
             color: var(--second-color);
         }
+        @media (max-width: 480px) {
+            font-size: 28px;
+        }
     }
 
     .mobile-menu__item {
         &:not(:last-child) {
             margin-bottom: 32px;
+            @media (max-width: 480px) {
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -96,10 +101,17 @@
         letter-spacing: 0.02em;
         margin-top: auto;
         margin-bottom: 64px;
+        @media (max-width: 480px) {
+            margin-bottom: 16px;
+        }
     }
 
     .mobile-menu__tel {
         margin-bottom: 32px;
+        @media (max-width: 480px) {
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
     }
 
     .mobile-menu__tel-link {
@@ -110,6 +122,9 @@
         font-size: 24px;
         line-height: 1.16em;
         color: var(--second-text-color);
+        @media (max-width: 480px) {
+            font-size: 16px;
+        }
     }
 
     .mobile-menu__social {
@@ -136,5 +151,9 @@
         letter-spacing: 0.02em;
         color: var(--second-color);
         cursor: pointer;
+
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
       }
 }

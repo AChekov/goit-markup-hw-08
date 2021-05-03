@@ -1,16 +1,24 @@
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 450px;
-  height: 581px;
+  position: relative;
   background-color: var(--main-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transition: var(--main-animation);
+    @media (max-width: 1199px) {
+      max-width: 450px;
+      min-height: 609px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     @media (min-width: 1200px) {
-      max-width: 528px;
+      position: absolute;
+      width: 528px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
     }
   }
   
@@ -38,5 +46,9 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  .modal {
+    transform: translate(-50%, -50%);
+    transition: transform var(--main-animation);
+  }
 }
   
